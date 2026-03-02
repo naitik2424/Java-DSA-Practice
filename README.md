@@ -1,3 +1,4 @@
+# DSA Preparation – Naitik Kumar
 📘 DSA Practice – Personal Notes & Pattern Guide
 
 This repository contains my structured DSA preparation.
