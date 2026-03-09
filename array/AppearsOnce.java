@@ -1,5 +1,6 @@
 package array;
-public static class AppearsOnce {
+
+public class AppearsOnce{
     public static void findUnique(int[] arr){
         for(int i=0; i < arr.length; i++){
             int num = arr[i];
@@ -15,10 +16,11 @@ public static class AppearsOnce {
         }
     }
     
-}
+
 public static void main(String[] args){
     int[] arr = {1,1,2,3,3,4};
     System.out.println("The unique element is: ");
     // AppearsOnce obj = new AppearsOnce();
     AppearsOnce.findUnique(arr);
+}
 }

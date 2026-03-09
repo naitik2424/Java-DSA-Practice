@@ -179,8 +179,52 @@ Goal: Pattern mastery, not random problem solving.
 
 # 🚀 Next Targets
 
-- House Robber (Choice DP)
-- 2D DP (Grid Problems)
 - LIS Pattern
 - Binary Search on Answer
 - Graph Basics
+
+
+##🗓 Day 18 – House Robber
+
+Pattern: Choice DP
+Learning:
+
+Pick or Skip logic
+
+dp[i] = max(nums[i] + dp[i-2], dp[i-1])
+
+##🗓 Day 19 – House Robber II
+
+Pattern: Circular Choice DP
+Learning:
+
+Break circular into 2 linear cases
+
+Reuse previous DP
+
+##🗓 Day 20 – Delete and Earn
+
+Pattern: DP Transformation
+Learning:
+
+Convert value adjacency to index adjacency
+
+Reduce to House Robber pattern
+
+##🗓 Day 21 – Unique Paths
+
+Pattern: 2D Grid DP (Counting)
+Learning:
+
+dp[i][j] = top + left
+
+First row/column initialization
+
+##🗓 Day 22 – Unique Paths II
+
+Pattern: 2D Grid DP + Obstacles
+Learning:
+
+Obstacle → dp = 0
+
+Same recurrence with condition

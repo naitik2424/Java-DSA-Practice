@@ -1,7 +1,6 @@
 // LeetCode 70
 
 // Pattern: 1D DP (Counting Ways)
-package DP;
 public class ClimbingStairs {
 
     public static int climbStairs(int n) {

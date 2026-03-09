@@ -2,7 +2,7 @@
 
 // Pattern: 1D DP (Minimization)
 
-package DP;
+
 public class MinCostClimbingStairs {
 
     public static int minCostClimbingStairs(int[] cost) {

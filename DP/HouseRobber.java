@@ -1,5 +1,4 @@
 // (Day 18 – LeetCode 198)
-package DP;
 public class HouseRobber {
 
     public static int rob(int[] nums) {

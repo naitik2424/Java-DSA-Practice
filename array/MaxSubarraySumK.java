@@ -1,3 +1,5 @@
+package array;
+
 public class MaxSubarraySumK {
     public static int maxSumSubArray(int[] arr,int k){
         int windowSum = 0;

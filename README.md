@@ -71,13 +71,30 @@ Smaller problems → Increasing stack
 
 🟢 DP/
 
-1D Dynamic Programming start.
+🟢 Dynamic Programming (DP)
+✅ 1D DP – Counting
 
-Problems solved:
+Climbing Stairs (LC 70)
 
-Climbing Stairs → Counting DP
+✅ 1D DP – Minimization
 
-Min Cost Climbing Stairs → Optimization DP
+Min Cost Climbing Stairs (LC 746)
+
+✅ Choice DP
+
+House Robber (LC 198)
+
+House Robber II (LC 213)
+
+✅ DP Transformation
+
+Delete and Earn (LC 740)
+
+✅ 2D Grid DP (Counting)
+
+Unique Paths (LC 62)
+
+Unique Paths II (LC 63)
 
 🧠 DP Core Thinking (Important)
 
@@ -165,15 +182,19 @@ Optimize after correctness
 
 🚀 Current Progress Level
 
-✔ Arrays & Sliding Window – Comfortable
+✔ Arrays & Sliding Window, prefix sum – Comfortable
 ✔ Monotonic Stack – Comfortable
 ✔ 1D DP – Started & Clear
+✔ Choice DP
+✔ Circular DP
+✔ DP Transformation
+✔ 2D Grid DP
 
 Next Targets:
 
-House Robber (Choice DP)
+Min Path Sum (2D Optimization DP)
 
-2D DP (Grid Problems)
+Triangle DP
 
 LIS Pattern
 

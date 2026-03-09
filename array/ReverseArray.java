@@ -18,7 +18,12 @@ public class ReverseArray {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
-
+        System.out.println("Original array:");
+        for (int x : arr) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+        System.out.println("Reversed array:");
         reverseArray(arr);
 
         // PRINT the array

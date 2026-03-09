@@ -1,5 +1,4 @@
-package DP;
-
+// (Day 20 – LeetCode 740)
 public class DeleteAndEarn {
 
     public static int deleteAndEarn(int[] nums) {
