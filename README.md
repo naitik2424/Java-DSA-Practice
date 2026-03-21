@@ -4,10 +4,6 @@
 
 This repository contains my daily DSA practice focused on pattern recognition instead of random problem solving.
 
-## 📊 GitHub Stats
-
-![Naitik's GitHub stats](https://github-readme-stats.vercel.app/api?username=naitik2424&show_icons=true&theme=tokyonight)
-
 🎯 Goal
 
 Understand patterns → Recognize patterns → Apply patterns
@@ -195,6 +191,10 @@ Every problem is:
 
 👉 Understood, not memorized
 
-🔗 Coding Profiles
-💻 LeetCode: https://leetcode.com/u/Naitikkumar7089/
-🔗 LinkedIn: https://www.linkedin.com/in/naitik-kumar-webdev/?isSelfProfile=true
+## 🧠 LeetCode Stats
+![LeetCode Stats](https://leetcard.jacoblin.cool/Naitikkumar7089?theme=dark&font=Baloo%202&ext=contest)
+## 🏆 Achievements
+![DSA](https://img.shields.io/badge/DSA-41%2B%20Problems-blue)
+![Java](https://img.shields.io/badge/Language-Java-orange)
+![Focus](https://img.shields.io/badge/Focus-Data%20Structures-green)
+![Status](https://img.shields.io/badge/Daily%20Practice-Active-success)
