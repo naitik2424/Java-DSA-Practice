@@ -2,278 +2,195 @@
 
 📘 Structured Data Structures & Algorithms Practice
 
-This repository contains my daily DSA preparation focused on pattern recognition rather than random problem solving.
+This repository contains my daily DSA practice focused on pattern recognition instead of random problem solving.
 
-Each problem is categorized by algorithmic pattern to strengthen problem-solving intuition for coding interviews.
+🎯 Goal
 
+Understand patterns → Recognize patterns → Apply patterns
+
+📊 DSA Progress Dashboard
+Metric	Value
+Total Problems Solved	41+
+Topics Covered	Arrays, Stack, DP, LIS, LCS, Palindrome DP, Binary Search
+Current Streak	41 Days
+Primary Language	Java
 📂 Folder Overview
 🟡 Array
 
-Basic array logic + Sliding Window + Prefix Sum + HashMap patterns.
+Basic array + Sliding Window + Prefix Sum + HashMap
 
 Problems Covered
-
 Two Sum
-
 Subarray Sum Equals K
-
 Maximum Subarray
-
-Longest Substring Without Repeating Characters
-
+Longest Substring Without Repeating
 Exactly K Distinct
-
 At Most K Distinct
-
 Move Zeros
-
 Rotate Array
-
 Palindrome Check
-
 Sorting Basics
-
 Patterns Learned
-
 Array Traversal
-
 Two Pointer Technique
-
 Fixed Sliding Window
-
 Variable Sliding Window
-
 Prefix Sum
-
-HashMap Frequency Counting
-
+HashMap Frequency
 Key Concepts
 Subarray Sum = Prefix Sum + HashMap
-At Most K Distinct → Sliding Window Shrinking
-
-Goal:
-
-Master iteration logic
-Understand sliding window patterns
-Recognize prefix sum problems quickly
+At Most K Distinct → Sliding Window
 🔵 Stack
 
-Focused on Monotonic Stack pattern, heavily used in interview questions.
+Focused on Monotonic Stack Pattern
 
-Problems Solved
-
-Daily Temperatures → Next Greater Element
-
-Stock Span → Previous Greater Element
-
-Next Greater Element
-
-Largest Rectangle in Histogram
-
-🔥 Stack Pattern Summary
-
-Monotonic Decreasing Stack
-
-Used for:
-
-Next Greater Element
-Previous Greater Element
+Problems
 Daily Temperatures
 Stock Span
-
-Monotonic Increasing Stack
-
-Used for:
-
-Nearest Smaller Element
+Next Greater Element
 Largest Rectangle in Histogram
-Golden Rule
-Greater problems → Decreasing stack
-Smaller problems → Increasing stack
+Pattern Summary
+Monotonic Decreasing Stack → Next Greater / Previous Greater
+Monotonic Increasing Stack → Nearest Smaller / Histogram
+
+Rule:
+Greater → Decreasing Stack
+Smaller → Increasing Stack
+
 🟢 Dynamic Programming (DP)
-
-The repository contains structured learning across multiple DP patterns.
-
 1️⃣ 1D DP – Counting
-
-Problems:
-
 Climbing Stairs (LC 70)
-
-Concept:
-
 dp[i] = dp[i-1] + dp[i-2]
-
-Example:
-
-Fibonacci pattern.
-
 2️⃣ 1D DP – Minimization
-
-Problems:
-
 Min Cost Climbing Stairs (LC 746)
-
-Concept:
-
-dp[i] = cost[i] + min(dp[i-1], dp[i-2])
+dp[i] = cost[i] + min(...)
 3️⃣ Choice DP
-
-Problems:
-
 House Robber (LC 198)
-
 House Robber II (LC 213)
 
-Core Idea:
-
+Concept:
 Pick OR Skip
 
-Recurrence:
-
+Formula:
 dp[i] = max(nums[i] + dp[i-2], dp[i-1])
+
 4️⃣ DP Transformation
-
-Problem:
-
 Delete and Earn (LC 740)
-
-Concept:
-
-Transform value adjacency into index adjacency and reuse House Robber DP.
-
+→ Reduced to House Robber
 5️⃣ 2D Grid DP
-
-Problems:
-
 Unique Paths (LC 62)
-
 Unique Paths II (LC 63)
-
 Minimum Path Sum (LC 64)
-
-Recurrence:
 
 dp[i][j] = top + left
 
-or
-
-dp[i][j] = grid[i][j] + min(top, left)
-6️⃣ Longest Increasing Subsequence Pattern
-
-Problems:
-
+6️⃣ LIS Pattern
 Longest Increasing Subsequence (LC 300)
-
 Number of LIS (LC 673)
-
 Russian Doll Envelopes (LC 354)
 
-Approaches learned:
+Approaches:
 
-O(n²) Dynamic Programming
-O(n log n) Binary Search Optimization
-
-Key concept:
-
-tails[] array technique
+O(n²) DP
+O(n log n) (Binary Search using tails[])
 7️⃣ String DP (LCS Family)
-
-Problems:
-
-Longest Common Subsequence (LC 1143)
-
+Longest Common Subsequence
 Print LCS
+Edit Distance
 
-Edit Distance (LC 72)
+Rule:
 
-Core DP rule:
-
-if chars match → 1 + dp[i-1][j-1]
-else → max(dp[i-1][j], dp[i][j-1])
+Match → 1 + dp[i-1][j-1]
+No match → max(...)
 8️⃣ Palindrome DP
+Longest Palindromic Subsequence
+Minimum Insertions to Palindrome
+Longest Palindromic Substring
 
-Problems:
-
-Longest Palindromic Subsequence (LC 516)
-
-Minimum Insertions to Make Palindrome (LC 1312)
-
-Longest Palindromic Substring (LC 5)
-
-Key insight:
+Concept:
 
 LPS = LCS(s, reverse(s))
-
-Minimum Insertions:
-
 Insertions = n - LPS
-🧠 DP Core Thinking Framework
+9️⃣ Knapsack / Subset DP
+Partition Equal Subset Sum
+Target Sum
 
-Whenever solving a DP problem:
+Pattern:
+Include / Exclude
 
-Step 1 → Define DP State
-Step 2 → Write Recurrence
-Step 3 → Define Base Cases
-Step 4 → Build solution bottom-up
-📊 What I Have Learned So Far
-Array Patterns
+🔟 Unbounded Knapsack
+Coin Change (LC 322)
+Coin Change II (LC 518)
+Min → dp[i] = min(...)
+Ways → dp[i] += ...
+🔍 Binary Search on Answer
+Koko Eating Bananas (LC 875)
+Ship Packages Within D Days (LC 1011)
+Split Array Largest Sum (LC 410)
+Pattern
+Search space = [min possible, max possible]
+If mid works → try smaller
+Else → increase
+🧠 DP Thinking Framework
+Define state
+Write recurrence
+Base case
+Build solution
+🎯 Pattern Recognition Cheatsheet
+Problem Clue	Pattern
+Next Greater	Monotonic Stack
+Nearest Smaller	Monotonic Stack
+Count ways	DP
+Min / Max	DP Optimization
+Subarray sum = K	Prefix Sum
+At most K	Sliding Window
+Increasing sequence	LIS
+Two strings	LCS
+Min/Max answer	Binary Search
+📈 What I Have Learned
+Arrays
 
 ✔ Sliding Window
 ✔ Prefix Sum
-✔ Two Pointer Logic
-✔ HashMap Frequency Counting
+✔ Two Pointer
 
-Stack Patterns
+Stack
 
 ✔ Monotonic Stack
-✔ Boundary Calculation
-✔ Next Greater / Previous Greater
-✔ Histogram area logic
+✔ Boundary Logic
 
 Dynamic Programming
 
 ✔ 1D DP
 ✔ Choice DP
-✔ Circular DP
-✔ DP Transformation
 ✔ Grid DP
-✔ LIS Pattern
-✔ String DP (LCS family)
+✔ LIS
+✔ LCS
 ✔ Palindrome DP
+✔ Knapsack
 
-🎯 Pattern Recognition Cheatsheet
+Binary Search
 
-If question says:
+✔ Binary Search on Answer
 
-Next Greater
+🎯 Current Focus
 
-→ Monotonic Decreasing Stack
+Advanced DP + Graphs (Next Phase)
 
-Nearest Smaller
+💡 Why This Repository Exists
 
-→ Monotonic Increasing Stack
+This repo is not for showing off.
 
-Count number of ways
+It is for:
 
-→ 1D DP
+Pattern mastery
+Interview preparation
+Consistent structured learning
 
-Minimum / Maximum cost
+Every problem is:
 
-→ Optimization DP
+👉 Understood, not memorized
 
-Subarray sum equals K
-
-→ Prefix Sum + HashMap
-
-At most K distinct
-
-→ Variable Sliding Window
-
-Increasing subsequence
-
-→ LIS pattern
-
-Two string comparison
-
-→ LCS DP
+🔗 Coding Profiles
+💻 LeetCode: https://leetcode.com/u/Naitikkumar7089/
+🔗 LinkedIn: https://www.linkedin.com/in/naitik-kumar-webdev/?isSelfProfile=true
