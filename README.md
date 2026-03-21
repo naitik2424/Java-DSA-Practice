@@ -4,6 +4,10 @@
 
 This repository contains my daily DSA practice focused on pattern recognition instead of random problem solving.
 
+## 📊 GitHub Stats
+
+![Naitik's GitHub stats](https://github-readme-stats.vercel.app/api?username=naitik2424&show_icons=true&theme=tokyonight)
+
 🎯 Goal
 
 Understand patterns → Recognize patterns → Apply patterns
