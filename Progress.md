@@ -551,14 +551,150 @@ Binary Search on Answer
 Graph Algorithms
 ```
 
-Next problems planned:
+---
 
-```
-Day 35 – Count Palindromic Substrings
-Day 36 – Partition Equal Subset Sum
-Day 37 – Target Sum
-Day 38 – Coin Change
-```
+# 🗓 Day 35 – Count Palindromic Substrings
+
+**LeetCode:** 647  
+**Pattern:** Expand Around Center  
+
+**Key Learning:**
+
+- Every palindrome expands from a center  
+- Total centers = 2*n - 1  
+- Expand left and right while characters match  
+
+**Concepts learned:**
+- Center expansion technique  
+- Counting all substrings efficiently  
+
+---
+
+# 🗓 Day 36 – Partition Equal Subset Sum
+
+**LeetCode:** 416  
+**Pattern:** Subset DP (0/1 Knapsack)
+
+**Key Learning:**
+
+- Convert problem into subset sum  
+- Target = totalSum / 2  
+
+**Recurrence:**
+
+
+dp[i][j] = dp[i-1][j] OR dp[i-1][j - nums[i]]
+
+
+**Concepts learned:**
+- Include / Exclude pattern  
+- Subset transformation  
+
+---
+
+# 🗓 Day 37 – Target Sum
+
+**LeetCode:** 494  
+**Pattern:** Subset DP Transformation  
+
+**Key Learning:**
+
+- Convert + / - problem into subset sum  
+
+
+P = (target + totalSum) / 2
+
+
+- Count subsets with sum = P  
+
+**Concepts learned:**
+- Problem transformation  
+- Counting DP  
+
+---
+
+# 🗓 Day 38 – Coin Change
+
+**LeetCode:** 322  
+**Pattern:** Unbounded Knapsack (Minimization)
+
+**Key Learning:**
+
+
+dp[i] = min(dp[i], 1 + dp[i - coin])
+
+
+- Use coins unlimited times  
+
+**Concepts learned:**
+- Optimization DP  
+- Unbounded knapsack  
+
+---
+
+# 🗓 Day 39 – Coin Change II
+
+**LeetCode:** 518  
+**Pattern:** Unbounded Knapsack (Counting)
+
+**Key Learning:**
+
+
+dp[i] += dp[i - coin]
+
+
+- Count number of ways  
+
+**Concepts learned:**
+- DP counting vs optimization difference  
+
+---
+
+# 🗓 Day 40 – Koko Eating Bananas
+
+**LeetCode:** 875  
+**Pattern:** Binary Search on Answer  
+
+**Key Learning:**
+
+- Search on speed instead of array  
+- Check function calculates hours  
+
+**Concepts learned:**
+- Binary search on range  
+- Greedy check  
+
+---
+
+# 🗓 Day 41 – Ship Packages Within D Days
+
+**LeetCode:** 1011  
+**Pattern:** Binary Search on Answer  
+
+**Key Learning:**
+
+- Search on capacity  
+- Maintain order while splitting  
+
+**Concepts learned:**
+- Greedy + Binary Search  
+- Range = [max(weights), sum(weights)]  
+
+---
+
+# 🗓 Day 42 – Split Array Largest Sum
+
+**LeetCode:** 410  
+**Pattern:** Binary Search on Answer  
+
+**Key Learning:**
+
+- Minimize largest subarray sum  
+- Same pattern as shipping problem  
+
+**Concepts learned:**
+- Partition logic  
+- Binary search optimization  
 
 ---
 
