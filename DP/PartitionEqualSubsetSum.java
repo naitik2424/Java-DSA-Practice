@@ -1,4 +1,3 @@
-import java.util.*;
 //day 36
 //leetdcode 416. Partition Equal Subset Sum
 public class PartitionEqualSubsetSum {
