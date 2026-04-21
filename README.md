@@ -1,279 +1,402 @@
-# 🚀 DSA Preparation – Naitik Kumar
+# \# 🚀 DSA Preparation – Naitik Kumar
 
-📘 Structured Data Structures & Algorithms Practice  
+# 
 
-This repository contains my daily DSA preparation focused on pattern recognition rather than random problem solving.
+# 📘 Structured Data Structures \& Algorithms Practice
 
-Each problem is categorized by algorithmic pattern to strengthen problem-solving intuition for coding interviews.
+# 
 
-📂 Folder Overview
-🟡 Array
+# This repository contains my daily DSA preparation focused on pattern recognition rather than random problem solving.
 
-Basic array logic + Sliding Window + Prefix Sum + HashMap patterns.
+# 
 
-Problems Covered
+# Each problem is categorized by algorithmic pattern to strengthen problem-solving intuition for coding interviews.
 
-Two Sum
+# 
 
-Subarray Sum Equals K
+# \---
 
-Maximum Subarray
+# 
 
-Longest Substring Without Repeating Characters
+# \## 📂 Folder Overview
 
-Exactly K Distinct
+# 
 
-At Most K Distinct
+# \---
 
-Move Zeros
+# 
 
-Rotate Array
+# \### 🟡 Array
 
-Palindrome Check
+# 
 
-Sorting Basics
+# Basic array logic + Sliding Window + Prefix Sum + HashMap patterns.
 
-Patterns Learned
+# 
 
-Array Traversal
+# \*\*Problems Covered\*\*
 
-Two Pointer Technique
+# \- Two Sum (LC 1)
 
-Fixed Sliding Window
+# \- Subarray Sum Equals K
 
-Variable Sliding Window
+# \- Maximum Subarray (LC 53)
 
-Prefix Sum
+# \- Best Time to Buy and Sell Stock (LC 121)
 
-HashMap Frequency Counting
+# \- Contains Duplicate (LC 217)
 
-Key Concepts
-Subarray Sum = Prefix Sum + HashMap
-At Most K Distinct → Sliding Window Shrinking
+# \- Longest Substring Without Repeating Characters (LC 3)
 
-Goal:
+# \- Exactly K Distinct
 
-Master iteration logic
-Understand sliding window patterns
-Recognize prefix sum problems quickly
-🔵 Stack
+# \- At Most K Distinct
 
-Focused on Monotonic Stack pattern, heavily used in interview questions.
+# \- Move Zeros, Rotate Array, Palindrome Check
 
-Problems Solved
+# 
 
-Daily Temperatures → Next Greater Element
+# \*\*Patterns Learned\*\*
 
-Stock Span → Previous Greater Element
+# \- Array Traversal, Two Pointer
 
-Next Greater Element
+# \- Fixed + Variable Sliding Window
 
-Largest Rectangle in Histogram
+# \- Prefix Sum, HashMap Frequency Counting
 
-🔥 Stack Pattern Summary
+# 
 
-Monotonic Decreasing Stack
+# \*\*Key Concepts\*\*
 
-Used for:
+# ```
 
-Next Greater Element
-Previous Greater Element
-Daily Temperatures
-Stock Span
+# Subarray Sum = Prefix Sum + HashMap
 
-Monotonic Increasing Stack
+# At Most K Distinct → Sliding Window Shrinking
 
-Used for:
+# Max Subarray → Kadane's Algorithm
 
-Nearest Smaller Element
-Largest Rectangle in Histogram
-Golden Rule
-Greater problems → Decreasing stack
-Smaller problems → Increasing stack
-🟢 Dynamic Programming (DP)
+# ```
 
-The repository contains structured learning across multiple DP patterns.
+# 
 
-1️⃣ 1D DP – Counting
+# \---
 
-Problems:
+# 
 
-Climbing Stairs (LC 70)
+# \### 🔵 Stack
 
-Concept:
+# 
 
-dp[i] = dp[i-1] + dp[i-2]
+# \*\*Problems Solved\*\*
 
-Example:
+# \- Valid Parentheses (LC 20), Min Stack (LC 155)
 
-Fibonacci pattern.
+# \- Daily Temperatures (LC 739) → Next Greater
 
-2️⃣ 1D DP – Minimization
+# \- Stock Span (LC 901) → Previous Greater
 
-Problems:
+# \- Largest Rectangle in Histogram (LC 84)
 
-Min Cost Climbing Stairs (LC 746)
+# 
 
-Concept:
+# \*\*🔥 Stack Pattern Summary\*\*
 
-dp[i] = cost[i] + min(dp[i-1], dp[i-2])
-3️⃣ Choice DP
+# ```
 
-Problems:
+# Greater problems → Monotonic Decreasing Stack
 
-House Robber (LC 198)
+# Smaller problems → Monotonic Increasing Stack
 
-House Robber II (LC 213)
+# ```
 
-Core Idea:
+# 
 
-Pick OR Skip
+# \---
 
-Recurrence:
+# 
 
-dp[i] = max(nums[i] + dp[i-2], dp[i-1])
-4️⃣ DP Transformation
+# \### 🟢 Dynamic Programming (DP)
 
-Problem:
+# 
 
-Delete and Earn (LC 740)
+# \*\*1️⃣ 1D DP – Counting\*\*
 
-Concept:
+# \- Climbing Stairs (LC 70): `dp\[i] = dp\[i-1] + dp\[i-2]`
 
-Transform value adjacency into index adjacency and reuse House Robber DP.
+# 
 
-5️⃣ 2D Grid DP
+# \*\*2️⃣ 1D DP – Minimization\*\*
 
-Problems:
+# \- Min Cost Climbing Stairs (LC 746): `dp\[i] = cost\[i] + min(dp\[i-1], dp\[i-2])`
 
-Unique Paths (LC 62)
+# 
 
-Unique Paths II (LC 63)
+# \*\*3️⃣ Choice DP\*\*
 
-Minimum Path Sum (LC 64)
+# \- House Robber (LC 198), House Robber II (LC 213)
 
-Recurrence:
+# ```
 
-dp[i][j] = top + left
+# dp\[i] = max(nums\[i] + dp\[i-2], dp\[i-1])
 
-or
+# Circular → Split into two ranges, take max
 
-dp[i][j] = grid[i][j] + min(top, left)
-6️⃣ Longest Increasing Subsequence Pattern
+# ```
 
-Problems:
+# 
 
-Longest Increasing Subsequence (LC 300)
+# \*\*4️⃣ DP Transformation\*\*
 
-Number of LIS (LC 673)
+# \- Delete and Earn (LC 740): Transform → reuse House Robber
 
-Russian Doll Envelopes (LC 354)
+# 
 
-Approaches learned:
+# \*\*5️⃣ 2D Grid DP\*\*
 
-O(n²) Dynamic Programming
-O(n log n) Binary Search Optimization
+# \- Unique Paths (LC 62, 63), Minimum Path Sum (LC 64)
 
-Key concept:
+# ```
 
-tails[] array technique
-7️⃣ String DP (LCS Family)
+# dp\[i]\[j] = top + left   or   grid\[i]\[j] + min(top, left)
 
-Problems:
+# Obstacle → dp\[i]\[j] = 0
 
-Longest Common Subsequence (LC 1143)
+# ```
 
-Print LCS
+# 
 
-Edit Distance (LC 72)
+# \*\*6️⃣ LIS Pattern\*\*
 
-Core DP rule:
+# \- LC 300 → O(n²) DP + O(n log n) tails\[] + Binary Search
 
-if chars match → 1 + dp[i-1][j-1]
-else → max(dp[i-1][j], dp[i][j-1])
-8️⃣ Palindrome DP
+# \- LC 673 (Number of LIS), LC 354 (Russian Doll Envelopes)
 
-Problems:
+# 
 
-Longest Palindromic Subsequence (LC 516)
+# \*\*7️⃣ String DP (LCS Family)\*\*
 
-Minimum Insertions to Make Palindrome (LC 1312)
+# \- LC 1143, LC 72 (Edit Distance)
 
-Longest Palindromic Substring (LC 5)
+# ```
 
-Key insight:
+# chars match → 1 + dp\[i-1]\[j-1]
 
-LPS = LCS(s, reverse(s))
+# else → max(dp\[i-1]\[j], dp\[i]\[j-1])
 
-Minimum Insertions:
+# ```
 
-Insertions = n - LPS
-🧠 DP Core Thinking Framework
+# 
 
-Whenever solving a DP problem:
+# \*\*8️⃣ Palindrome DP\*\*
 
-Step 1 → Define DP State
-Step 2 → Write Recurrence
-Step 3 → Define Base Cases
-Step 4 → Build solution bottom-up
-📊 What I Have Learned So Far
-Array Patterns
+# \- LC 516, LC 1312, LC 5, LC 647
 
-✔ Sliding Window
-✔ Prefix Sum
-✔ Two Pointer Logic
-✔ HashMap Frequency Counting
+# ```
 
-Stack Patterns
+# LPS = LCS(s, reverse(s))
 
-✔ Monotonic Stack
-✔ Boundary Calculation
-✔ Next Greater / Previous Greater
-✔ Histogram area logic
+# Minimum Insertions = n - LPS
 
-Dynamic Programming
+# Expand Around Center for substrings
 
-✔ 1D DP
-✔ Choice DP
-✔ Circular DP
-✔ DP Transformation
-✔ Grid DP
-✔ LIS Pattern
-✔ String DP (LCS family)
-✔ Palindrome DP
+# ```
 
-🎯 Pattern Recognition Cheatsheet
+# 
 
-If question says:
+# \*\*9️⃣ Subset / Knapsack DP\*\*
 
-Next Greater
+# \- LC 416 (0/1 Knapsack), LC 494 (Count Subsets)
 
-→ Monotonic Decreasing Stack
+# \- LC 322 (Coin Change Min), LC 518 (Coin Change Count)
 
-Nearest Smaller
+# ```
 
-→ Monotonic Increasing Stack
+# 0/1 → dp\[j] = dp\[j] OR dp\[j - nums\[i]]
 
-Count number of ways
+# Unbounded Min → dp\[i] = min(dp\[i], 1 + dp\[i-coin])
 
-→ 1D DP
+# Unbounded Count → dp\[i] += dp\[i-coin]
 
-Minimum / Maximum cost
+# ```
 
-→ Optimization DP
+# 
 
-Subarray sum equals K
+# \*\*🔟 DP on Sequences\*\*
 
-→ Prefix Sum + HashMap
+# \- LC 55 (Jump Game), LC 45 (Jump Game II)
 
-At most K distinct
+# \- LC 91 (Decode Ways), LC 139 (Word Break)
 
-→ Variable Sliding Window
+# ```
 
-Increasing subsequence
+# Jump Game → track maxReach, if i > maxReach → false
 
-→ LIS pattern
+# Decode Ways → single + double digit check
 
-Two string comparison
+# Word Break → dp\[i] = any dp\[j] \&\& s\[j..i] in dict
 
-→ LCS DP
+# ```
+
+# 
+
+# \---
+
+# 
+
+# \### 🔴 Binary Search
+
+# 
+
+# \*\*1️⃣ Classic\*\*
+
+# \- LC 704: `left=0, right=n-1, while(left<=right)`
+
+# 
+
+# \*\*2️⃣ Rotated Array\*\*
+
+# \- LC 153 (Find Min): `compare mid with right, while(left<right)`
+
+# \- LC 33 (Search): Identify sorted half → 4 cases
+
+# 
+
+# \*\*3️⃣ Variants\*\*
+
+# \- LC 34: Two pass findLeft + findRight
+
+# \- LC 162 (Peak): `nums\[mid] < nums\[mid+1]` → go right
+
+# \- LC 74 (2D Matrix): Binary search on rows then cols
+
+# 
+
+# \*\*4️⃣ Binary Search on Answer\*\*
+
+# \- LC 875 (Koko), LC 1011 (Ship), LC 410 (Split Array)
+
+# ```
+
+# Range = \[min\_answer, max\_answer]
+
+# canFinish() check function
+
+# If valid → ans=mid, high=mid-1  else  low=mid+1
+
+# ⚠️ Use long to avoid integer overflow!
+
+# ```
+
+# 
+
+# \---
+
+# 
+
+# \## 🧠 DP Core Thinking Framework
+
+# 
+
+# ```
+
+# Step 1 → Define DP State
+
+# Step 2 → Write Recurrence
+
+# Step 3 → Define Base Cases
+
+# Step 4 → Build bottom-up
+
+# ```
+
+# 
+
+# \---
+
+# 
+
+# \## 🎯 Pattern Recognition Cheatsheet
+
+# 
+
+# ```
+
+# Next Greater              → Monotonic Decreasing Stack
+
+# Nearest Smaller           → Monotonic Increasing Stack
+
+# Count ways                → 1D DP Counting
+
+# Min/Max cost              → Optimization DP
+
+# Subarray sum = K          → Prefix Sum + HashMap
+
+# At most K distinct        → Variable Sliding Window
+
+# Increasing subsequence    → LIS Pattern
+
+# Two string comparison     → LCS DP
+
+# Palindrome                → Expand Around Center / LPS
+
+# Include/Exclude           → Knapsack DP
+
+# Can reach end?            → Jump Game / Greedy
+
+# Search sorted array       → Binary Search
+
+# Search answer in range    → Binary Search on Answer
+
+# Rotated sorted array      → Modified Binary Search
+
+# 2D matrix search          → Two-step Binary Search
+
+# ```
+
+# 
+
+# \---
+
+# 
+
+# \## 📊 What I Have Learned So Far
+
+# 
+
+# \*\*Array Patterns\*\* ✅ Sliding Window, Prefix Sum, Two Pointer, HashMap, Kadane's
+
+# 
+
+# \*\*Stack Patterns\*\* ✅ Monotonic Stack, Next/Previous Greater, Histogram
+
+# 
+
+# \*\*Dynamic Programming\*\* ✅
+
+# \- 1D DP, Choice DP, Circular DP, DP Transformation
+
+# \- Grid DP, LIS, String DP (LCS), Palindrome DP
+
+# \- Knapsack (0/1 + Unbounded), Sequence DP
+
+# 
+
+# \*\*Binary Search\*\* ✅
+
+# \- Classic, Rotated Array, Two Pass, Peak, 2D Matrix
+
+# \- Binary Search on Answer
+
+# 
+
+# \---
+
+# 
+
+# \## 🗓 Current Status
+
+# \- \*\*Day:\*\* 73 / ongoing
+
+# \- \*\*Current Phase:\*\* Week 3 — Binary Search ✅ → Graphs next
+
