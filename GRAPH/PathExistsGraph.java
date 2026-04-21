@@ -1,3 +1,5 @@
+package GRAPH;
+
 import java.util.*;
 
 public class PathExistsGraph {
