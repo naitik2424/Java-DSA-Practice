@@ -708,17 +708,6 @@ Goal: Pattern mastery, not random problem solving.
 ---
 
 ## 🗓 Day 71 – Find Peak Element
-**LeetCode:** 162
-**Pattern:** Binary Search on Unsorted Array
-
-**Key Learning:**
-- nums[mid] < nums[mid+1] → go right
-- else → go left or mid is peak
-- while(left < right), return left
-
----
-
-## 🗓 Day 72 – Search a 2D Matrix
 **LeetCode:** 74
 **Pattern:** Binary Search (2 Step)
 
@@ -726,6 +715,17 @@ Goal: Pattern mastery, not random problem solving.
 - Step 1: Find correct row via binary search
 - Step 2: Binary search within that row
 - Use while(left < right) for row search
+
+---
+
+## 🗓 Day 72 – Search a 2D Matrix
+**LeetCode:** 162
+**Pattern:** Binary Search on Unsorted Array
+
+**Key Learning:**
+- nums[mid] < nums[mid+1] → go right
+- else → go left or mid is peak
+- while(left < right), return left
 
 ---
 
@@ -740,3 +740,5 @@ Goal: Pattern mastery, not random problem solving.
 - If valid: ans = mid, high = mid - 1
 
 ---
+
+
