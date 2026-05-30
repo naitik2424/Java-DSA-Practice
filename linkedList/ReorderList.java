@@ -5,7 +5,8 @@
 class ReorderList {
     public void reorderList(ListNode head) {
         // Step 1: Middle dhundho
-        ListNode slow = head, fast = head;
+        ListNode slow = head;
+        ListNode fast = head;
         while(fast.next != null && fast.next.next != null){
             slow = slow.next;
             fast = fast.next.next;
@@ -14,7 +15,8 @@ class ReorderList {
         // Step 2: Second half alag karo aur reverse karo
         ListNode second = slow.next;
         slow.next = null;
-        ListNode prev = null, curr = second;
+        ListNode prev = null;
+        ListNode curr = second;
         while(curr != null){
             ListNode next = curr.next;
             curr.next = prev;
