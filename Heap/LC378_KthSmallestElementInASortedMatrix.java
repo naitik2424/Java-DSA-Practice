@@ -1,10 +1,11 @@
-class Solution {
+package Heap;
+
+import java.util.PriorityQueue;
+
+public class LC378_KthSmallestElementInASortedMatrix {
     public int kthSmallest(int[][] matrix, int k) {
-
         int n = matrix.length;
-
-        PriorityQueue<int[]> pq =
-                new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
 
         // First element of every row
         for (int r = 0; r < n; r++) {
@@ -12,10 +13,7 @@ class Solution {
         }
 
         for (int i = 0; i < k - 1; i++) {
-
             int[] curr = pq.poll();
-
-            int value = curr[0];
             int row = curr[1];
             int col = curr[2];
 

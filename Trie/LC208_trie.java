@@ -2,6 +2,7 @@ package DSA.Trie;
 
 public class LC208_trie {
     static class Node {
+      
         Node[] children;
         boolean isEnd;
 

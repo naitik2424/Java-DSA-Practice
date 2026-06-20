@@ -1,4 +1,8 @@
-class Solution {
+package Greedy;
+
+import java.util.Arrays;
+
+public class LC455_AssignCookies {
     public int findContentChildren(int[] g, int[] s) {
         Arrays.sort(g);
         Arrays.sort(s);

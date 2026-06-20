@@ -1,4 +1,8 @@
-class Solution {
+package Greedy;
+
+import java.util.Arrays;
+
+public class LC435_NonOverLappingIntervals {
     public int eraseOverlapIntervals(int[][] intervals) {
         Arrays.sort(intervals, (a,b) -> a[1] - b[1]);
         int count = 0;

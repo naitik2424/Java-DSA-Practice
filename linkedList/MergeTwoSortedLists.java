@@ -1,8 +1,10 @@
+package linkedList;
+
 // LC21 - Merge Two Sorted Lists
 // Pattern: Dummy Node + Two Pointer
 // Time: O(n+m), Space: O(1)
 
-class MergeTwoSortedLists {
+public class MergeTwoSortedLists {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;

@@ -1,4 +1,9 @@
-class Solution {
+package Heap;
+
+import java.util.PriorityQueue;
+import java.util.Collections;
+
+public class LC1046_LastStoneWeight {
     public int lastStoneWeight(int[] stones) {
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         for(int stone : stones){

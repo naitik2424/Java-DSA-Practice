@@ -1,8 +1,10 @@
+package linkedList;
+
 // LC206 - Reverse Linked List
 // Pattern: Two Pointer (prev, curr)
 // Time: O(n), Space: O(1)
 
-class ReverseLinkedList {
+public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;

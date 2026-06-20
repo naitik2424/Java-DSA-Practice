@@ -1,8 +1,10 @@
+package linkedList;
+
 // LC143 - Reorder List
 // Pattern: Find Middle + Reverse + Merge
 // Time: O(n), Space: O(1)
 
-class ReorderList {
+public class ReorderList {
     public void reorderList(ListNode head) {
         // Step 1: Middle dhundho
         ListNode slow = head;

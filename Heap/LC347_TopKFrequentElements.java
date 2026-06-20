@@ -1,4 +1,10 @@
-class Solution {
+package Heap;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
+
+public class LC347_TopKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int num : nums){

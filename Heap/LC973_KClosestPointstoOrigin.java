@@ -1,4 +1,8 @@
-class Solution {
+package Heap;
+
+import java.util.PriorityQueue;
+
+public class LC973_KClosestPointstoOrigin {
     public int[][] kClosest(int[][] points, int k) {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a,b)->b[0] - a[0]);
         for(int i = 0; i< points.length;i++){
