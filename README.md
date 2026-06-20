@@ -2,7 +2,7 @@
 
 📘 Structured Data Structures & Algorithms Practice
 
-This repository contains my daily DSA preparation focused on pattern recognition rather than random problem solving.
+This repository contains my structured DSA preparation focused on pattern recognition rather than random problem solving.
 
 Each problem is categorized by algorithmic pattern to strengthen problem-solving intuition for coding interviews.
 
@@ -14,40 +14,51 @@ Each problem is categorized by algorithmic pattern to strengthen problem-solving
 
 ### 🟡 Array
 
-Basic array logic + Sliding Window + Prefix Sum + HashMap patterns.
+Basic array logic + Sliding Window + Prefix Sum + HashMap + LeetCode Top 150 patterns.
 
 **Problems Covered**
 - Two Sum (LC 1)
-- Subarray Sum Equals K
-- Maximum Subarray (LC 53)
+- Merge Sorted Array (LC 88)
+- Remove Element (LC 27)
+- Remove Duplicates from Sorted Array (LC 26)
+- Remove Duplicates from Sorted Array II (LC 80)
+- Majority Element (LC 169)
+- Rotate Array (LC 189)
 - Best Time to Buy and Sell Stock (LC 121)
+- Best Time to Buy and Sell Stock II (LC 122)
+- Subarray Sum Equals K (LC 560)
+- Maximum Subarray (LC 53)
 - Contains Duplicate (LC 217)
 - Longest Substring Without Repeating Characters (LC 3)
-- Exactly K Distinct
-- At Most K Distinct
-- Move Zeros, Rotate Array, Palindrome Check
+- Exactly K Distinct / At Most K Distinct
+- Move Zeros, Palindrome Check
 
 **Patterns Learned**
 - Array Traversal, Two Pointer
 - Fixed + Variable Sliding Window
 - Prefix Sum, HashMap Frequency Counting
+- Boyer-Moore Voting Algorithm
 
 **Key Concepts**
 ```
 Subarray Sum = Prefix Sum + HashMap
 At Most K Distinct → Sliding Window Shrinking
 Max Subarray → Kadane's Algorithm
+Rotate Array → Reverse parts of array in-place
 ```
 
 ---
 
 ### 🔵 Stack
 
+LIFO operations and Monotonic Stack patterns for range-query and boundary problems.
+
 **Problems Solved**
-- Valid Parentheses (LC 20), Min Stack (LC 155)
-- Daily Temperatures (LC 739) → Next Greater
-- Stock Span (LC 901) → Previous Greater
-- Largest Rectangle in Histogram (LC 84)
+- Valid Parentheses (LC 20)
+- Min Stack (LC 155)
+- Daily Temperatures (LC 739) → Next Greater Element
+- Stock Span (LC 901) → Previous Greater Element
+- Largest Rectangle in Histogram (LC 84) → Boundary check
 
 **🔥 Stack Pattern Summary**
 ```
@@ -57,7 +68,22 @@ Smaller problems → Monotonic Increasing Stack
 
 ---
 
+### 🟣 Linked List
+
+Node manipulation, reference adjustments, and cycle detection.
+
+**Problems Solved**
+- Reverse Linked List (LC 206) → Pointer updates
+- Merge Two Sorted Lists (LC 21) → Dummy node approach
+- Reorder List (LC 143) → Middle search + Reverse + Interleave
+- Linked List Cycle (LC 141) → Floyd's Fast/Slow pointers
+- Remove Nth Node From End (LC 19) → Pointer gap maintenance
+
+---
+
 ### 🟢 Dynamic Programming (DP)
+
+Memoization and bottom-up tabulation to optimize recursive structures.
 
 **1️⃣ 1D DP – Counting**
 - Climbing Stairs (LC 70): `dp[i] = dp[i-1] + dp[i-2]`
@@ -123,6 +149,8 @@ Word Break → dp[i] = any dp[j] && s[j..i] in dict
 
 ### 🔴 Binary Search
 
+Divide-and-conquer on sorted spaces and searching over answer ranges.
+
 **1️⃣ Classic**
 - LC 704: `left=0, right=n-1, while(left<=right)`
 
@@ -143,6 +171,41 @@ canFinish() check function
 If valid → ans=mid, high=mid-1  else  low=mid+1
 ⚠️ Use long to avoid integer overflow!
 ```
+
+---
+
+### 🟠 Heap / Priority Queue
+
+Min-heaps and Max-heaps for top-K, scheduling, and stream processing.
+
+**Problems Solved**
+- LC 215: Kth Largest Element in an Array (Min-Heap approach)
+- LC 347: Top K Frequent Elements
+- LC 295: Find Median from Data Stream (Double Heap system)
+- LC 973: K Closest Points to Origin
+- LC 1046: Last Stone Weight (Max-Heap simulation)
+- LC 378: Kth Smallest Element in a Sorted Matrix (Pointer Heap)
+
+---
+
+### 🟤 Greedy
+
+Making locally optimal choices to achieve globally optimal solutions.
+
+**Problems Solved**
+- LC 55: Jump Game
+- LC 45: Jump Game II
+- LC 435: Non-overlapping Intervals
+- LC 455: Assign Cookies
+
+---
+
+### 🧬 Trie
+
+Prefix trees optimized for string search operations.
+
+**Problems Solved**
+- LC 208: Implement Trie (Insert, Search, StartsWith)
 
 ---
 
@@ -181,9 +244,11 @@ Rotated sorted array      → Modified Binary Search
 
 ## 📊 What I Have Learned So Far
 
-**Array Patterns** ✅ Sliding Window, Prefix Sum, Two Pointer, HashMap, Kadane's
+**Array Patterns** ✅ Sliding Window, Prefix Sum, Two Pointer, HashMap, Kadane's, Boyer-Moore
 
 **Stack Patterns** ✅ Monotonic Stack, Next/Previous Greater, Histogram
+
+**Linked List** ✅ Double pointer, cycle detection, reordering, reversal
 
 **Dynamic Programming** ✅
 - 1D DP, Choice DP, Circular DP, DP Transformation
@@ -194,8 +259,9 @@ Rotated sorted array      → Modified Binary Search
 - Classic, Rotated Array, Two Pass, Peak, 2D Matrix
 - Binary Search on Answer
 
+**Heap & Greedy** ✅ Min/Max heap operations, interval scheduling, greedy jumps
+
 ---
 
 ## 🗓 Current Status
-- **Day:** 73 / ongoing
-- **Current Phase:** Week 3 — Binary Search ✅ → Graphs next
+- **Current Phase:** Graphs, Trees, and advanced structures next.
