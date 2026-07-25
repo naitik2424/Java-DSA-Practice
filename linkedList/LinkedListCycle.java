@@ -1,8 +1,10 @@
-package linkedList;
+
 
 // LC141 - Linked List Cycle
 // Pattern: Floyd's Cycle Detection (Fast/Slow)
 // Time: O(n), Space: O(1)
+
+
 
 public class LinkedListCycle {
     public boolean hasCycle(ListNode head) {
