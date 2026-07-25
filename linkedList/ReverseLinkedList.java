@@ -1,4 +1,3 @@
-package linkedList;
 
 // LC206 - Reverse Linked List
 // Pattern: Two Pointer (prev, curr)

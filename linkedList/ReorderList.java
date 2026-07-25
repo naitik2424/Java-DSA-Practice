@@ -1,4 +1,3 @@
-package linkedList;
 
 // LC143 - Reorder List
 // Pattern: Find Middle + Reverse + Merge

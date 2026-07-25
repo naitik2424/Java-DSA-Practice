@@ -1,4 +1,3 @@
-package DSA.Trie;
 
 public class LC208_trie {
     static class Node {
