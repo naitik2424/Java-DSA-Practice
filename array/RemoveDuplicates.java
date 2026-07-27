@@ -12,4 +12,14 @@ public class RemoveDuplicates {
         }
         return index;
     }
+    public static void main(String[] args) {
+        RemoveDuplicates rd = new RemoveDuplicates();
+        int[] nums = {1, 1, 2, 2, 3, 4, 4, 5};
+        int newLength = rd.removeDuplicates(nums);
+        System.out.println("New length after removing duplicates: " + newLength);
+        System.out.print("Array after removing duplicates: ");
+        for (int i = 0; i < newLength; i++) {
+            System.out.print(nums[i] + " ");
+        }
+    }
 }
