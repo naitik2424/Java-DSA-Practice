@@ -1,5 +1,5 @@
 package array;
-
+// Brute force approach
 public class RotateByDPlaces {
     public static void rotate(int[] nums,int d){
         int n = nums.length;
@@ -21,9 +21,7 @@ public class RotateByDPlaces {
         for(int i=0;i<nums.length;i++){
             System.out.print(nums[i]+" ");
         }
-        
-
-
     }
 }
 
+// t.c = O(n) and s.c = O(d)

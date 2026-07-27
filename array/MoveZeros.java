@@ -1,45 +1,40 @@
 package array;
 import java.util.*;
-
+// Optimized approach
 public class MoveZeros {
-
-    // Function to move all zeros to the end of the array
-    public static int[] moveZeros(int n, int[] a) {
-
-        // 🔹 Step 1: Temporary list banate hain jisme non-zero elements store karenge
-        ArrayList<Integer> temp = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            if (a[i] != 0) {
-                temp.add(a[i]); // sirf non-zero numbers daalo
+    public static void swap(int[] arr,int i,int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    public static int[] moveZeros(int n,int[] arr){
+        int j=-1;
+        for(int i=0;i<n;i++){
+            if(arr[i] ==0){
+                j=i;
+                break;
             }
         }
-
-        // 🔹 Step 2: Non-zero elements wapas original array me copy kar do
-        int nz = temp.size(); // nz = number of non-zero elements
-
-        for (int i = 0; i < nz; i++) {
-            a[i] = temp.get(i);
+        for(int i = j+1;i<n;i++){
+            if(arr[i] !=0){
+                swap(arr,i,j);
+                j++;
+            }
         }
-
-        // 🔹 Step 3: Baaki remaining positions par zero fill kar do
-        for (int i = nz; i < n; i++) {
-            a[i] = 0;
-        }
-
-        // Array modify ho gaya, return kar do
-        return a;
+        return arr;
     }
+
+   
 
     public static void main(String[] args) {
         int[] arr = {1, 0, 2, 0, 0, 3, 4};
         int n = arr.length;
 
-        int[] result = moveZeros(n, arr);
-
-        System.out.print("After moving zeros: ");
-        for (int val : result) {
-            System.out.print(val + " ");
+        for(int num : moveZeros(n,arr)){
+            System.out.print(num+" ");
         }
     }
 }
+
+// Time Complexity: O(n) - We traverse the array twice, but each traversal is linear in time complexity.
+// Space Complexity: O(1) - We are not using any extra space that scales with input size.
