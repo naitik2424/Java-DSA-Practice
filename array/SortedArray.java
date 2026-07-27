@@ -14,3 +14,5 @@ public class SortedArray {
         System.out.println("Array is sorted: " + isSorted);
     }
 }
+// t.c = O(n)
+// s.c = O(1)
