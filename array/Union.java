@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Union {
 
-    public static ArrayList<Integer> union(int[] arr1, int[] arr2){
+    public static List<Integer> union(int[] arr1, int[] arr2){
     HashSet<Integer> set = new HashSet<>();
     for(int i=0;i<arr1.length;i++){
         set.add(arr1[i]);
@@ -23,7 +23,7 @@ public class Union {
     public static void main(String[] args){
         int[] arr1 = {1,2,2,3,4};
         int[] arr2= {2,3,4,4,5,6};
-        ArrayList<Integer> result = union(arr1, arr2);
+        List<Integer> result = union(arr1, arr2);
         System.out.println(result);
     }    
 
