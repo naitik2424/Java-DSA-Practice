@@ -1,7 +1,7 @@
 
+
 public class LC208_trie {
     static class Node {
-      
         Node[] children;
         boolean isEnd;
 
@@ -56,7 +56,7 @@ public class LC208_trie {
             insert(words[i]);
         }
         System.out.println(search("their"));
-        System.out.println(search("a"));
+        System.out.println(search("an"));
     }
 
 } 

@@ -1,5 +1,5 @@
 package array;
-
+// brute force approach
 import java.util.*;
 
 public class Union {

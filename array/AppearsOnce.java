@@ -23,3 +23,6 @@ public static void main(String[] args){
     AppearsOnce.findUnique(arr);
 }
 }
+
+// t.c = o(n2)
+// s.c= o(n)
