@@ -30,3 +30,6 @@ public class LongestSubArraySumK2 {
     }
     
 }
+
+// t.c = o(2n)
+// s.c = o(1)
