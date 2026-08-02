@@ -29,4 +29,7 @@ public class SortWithoutAlgo {
         }
     }
     
+
 }
+// t.c = o(n)
+// s.c = o(1)

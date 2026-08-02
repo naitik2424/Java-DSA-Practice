@@ -1,7 +1,7 @@
 package array;
 
 public class MajorityElement {
-    public int majorityElement(int[] nums) {
+    public static int majorityElement(int[] nums) {
         int count = 0;
         int candidate = 0;
         
@@ -13,5 +13,9 @@ public class MajorityElement {
         }
         
         return candidate;
+    }
+    public static void main(String[] args) {
+        int[] nums = {3, 2, 3};
+        System.out.println(majorityElement(nums)); 
     }
 }
