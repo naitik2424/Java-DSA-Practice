@@ -26,5 +26,6 @@ class Palindrome {
         Palindrome palindrome = new Palindrome();
         boolean result = palindrome.isPalindrome(s);
         System.out.println(result);
+        sc.close();
     }
 }

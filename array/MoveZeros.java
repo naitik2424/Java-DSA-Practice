@@ -1,5 +1,4 @@
 package array;
-import java.util.*;
 // Optimized approach
 public class MoveZeros {
     public static void swap(int[] arr,int i,int j){

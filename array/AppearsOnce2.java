@@ -5,7 +5,6 @@ public class AppearsOnce2 {
         int[] nums={1,1,2,3,3,4,4};
         int xor = 0;
         int n = nums.length;
-        int maxi = nums[0];
         for(int i =0;i<n;i++){
             xor = xor^nums[i];
         }

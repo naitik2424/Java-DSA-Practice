@@ -1,5 +1,4 @@
 package GRAPH;
-import java.util.*;
 public class NumIslands {
     public int numIslands(char[][] grid) {
         int m = grid.length;

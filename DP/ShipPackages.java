@@ -1,4 +1,3 @@
-import java.util.*;
 public class ShipPackages {
 
     public int shipWithinDays(int[] weights, int days) {
