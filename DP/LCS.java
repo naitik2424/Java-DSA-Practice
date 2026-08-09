@@ -1,3 +1,4 @@
+package DP;
 class LCS {
 
     public int longestCommonSubsequence(String text1, String text2) {

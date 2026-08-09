@@ -1,3 +1,4 @@
+package DP;
 // LeetCode 70
 
 // Pattern: 1D DP (Counting Ways)

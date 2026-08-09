@@ -1,3 +1,5 @@
+package DP;
+
 public class CountPalindromicSubstrings {
 
     public int countSubstrings(String s) {

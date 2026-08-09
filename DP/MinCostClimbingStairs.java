@@ -1,5 +1,5 @@
 // LeetCode 746
-
+package DP;
 // Pattern: 1D DP (Minimization)
 
 

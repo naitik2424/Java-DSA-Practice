@@ -1,3 +1,5 @@
+package DP;
+
 public class MinimumInsertionsPalindrome {
 
     public int minInsertions(String s){

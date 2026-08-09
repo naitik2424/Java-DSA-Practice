@@ -1,4 +1,5 @@
 // (Day 21 – LeetCode 62)
+package DP;
 public class UniquePaths {
 
     public static int uniquePaths(int m, int n) {

@@ -1,4 +1,6 @@
 //day 36
+package DP;
+
 //leetdcode 416. Partition Equal Subset Sum
 public class PartitionEqualSubsetSum {
 

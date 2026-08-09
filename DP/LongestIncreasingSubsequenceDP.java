@@ -1,3 +1,5 @@
+package DP;
+
 import java.util.*;
 //here it takes O(n^2) time and O(n) space
 public class LongestIncreasingSubsequenceDP {
