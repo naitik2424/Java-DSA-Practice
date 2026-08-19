@@ -1,5 +1,4 @@
 package DP;
-import java.util.*;
 public class FrogJump {
     static int frogJump(int ind, int[] height) {
         if (ind == 0) {
