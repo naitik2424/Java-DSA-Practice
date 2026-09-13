@@ -31,11 +31,22 @@ public class TraverseLL {
         }
         return cnt;
     }
+    private static int checkIfPresent(Node head,int val){
+        Node temp =head;
+        while(temp !=null){
+            if(temp.data == val){
+                return 1;
+            }
+            temp = temp.next;
+        }
+        return 0;
+    }
 
     public static void main(String[] args) {
         int[] arr = {12,5,6,8};
         Node head = convertArr2LL(arr);
         Node temp = head;
+        System.out.println("Array to LL : ");
         while(temp !=null){
             System.out.print(temp.data + " ");
             temp = temp.next;
@@ -43,5 +54,7 @@ public class TraverseLL {
         System.out.println();
         System.out.print("Length of LL : ");
         System.out.println(lengthOfLL(head));
+        int val=5;
+        System.out.println("value is available : " + checkIfPresent(head,val));
     }
 }
