@@ -1,6 +1,5 @@
 package array;
 
-
 class AddBinary {
     public static String addBinary(String a, String b) {
 

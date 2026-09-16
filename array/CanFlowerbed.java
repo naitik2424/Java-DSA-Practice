@@ -1,6 +1,7 @@
 package array;
 
 
+
 class CanFlowerbed {
     public static boolean canPlaceFlowers(int[] flowerbed, int n) {
         if(n==0) return true;

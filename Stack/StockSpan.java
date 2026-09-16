@@ -1,3 +1,5 @@
+package Stack;
+
 // 📄 2️⃣ StockSpan.java
 // LeetCode 901
 

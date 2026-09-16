@@ -1,3 +1,5 @@
+package linkedList;
+
 
 // LC21 - Merge Two Sorted Lists
 // Pattern: Dummy Node + Two Pointer

@@ -1,3 +1,5 @@
+package linkedList;
+
 
 
 // LC141 - Linked List Cycle

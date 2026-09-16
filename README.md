@@ -264,4 +264,7 @@ Rotated sorted array      → Modified Binary Search
 ---
 
 ## 🗓 Current Status
-- **Current Phase:** Graphs, Trees, and advanced structures next.
+- **Current Phase:** Revision of All Topics
+Array ✅
+String ✅
+Linked list - Ongoing

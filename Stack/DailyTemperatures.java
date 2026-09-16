@@ -1,3 +1,5 @@
+package Stack;
+
 // 1️⃣ DailyTemperatures.java
 // LeetCode 739
 

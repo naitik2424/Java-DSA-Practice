@@ -1,3 +1,5 @@
+package Stack;
+
 // LeetCode 84
 
 // Pattern: Monotonic Increasing Stack (Nearest Smaller)
