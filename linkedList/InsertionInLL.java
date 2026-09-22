@@ -1,103 +1,162 @@
 package linkedList;
 
 public class InsertionInLL {
+
+    // Convert Array to Linked List
     private static Node convertArr2LL(int[] arr) {
+
         Node head = new Node(arr[0]);
         Node mover = head;
+
         for (int i = 1; i < arr.length; i++) {
+
             Node temp = new Node(arr[i]);
+
             mover.next = temp;
             mover = temp;
         }
+
         return head;
     }
 
+    // Print Linked List
     private static void printLL(Node head) {
+
         while (head != null) {
-            System.out.println(head.data + " ");
+
+            System.out.print(head.data + " ");
             head = head.next;
         }
+
+        System.out.println();
     }
 
-    // head insertion
+    // Insert at Head
     private static Node insertHead(Node head, int val) {
+
         Node temp = new Node(val, head);
+
         return temp;
     }
 
-    // tail insertion
+    // Insert at Tail
     private static Node insertTail(Node head, int val) {
-        if (head == null)
+
+        // If Linked List is empty
+        if (head == null) {
             return new Node(val);
+        }
+
         Node temp = head;
+
         while (temp.next != null) {
             temp = temp.next;
         }
+
         temp.next = new Node(val);
+
         return head;
     }
 
-    // insert at position
+    // Insert at Position
     private static Node insertPos(Node head, int el, int k) {
+
+        // Empty Linked List
         if (head == null) {
+
             if (k == 1) {
                 return new Node(el);
-            } else {
-                return null;
             }
+
+            return null;
         }
+
+        // Insert at head
         if (k == 1) {
             return new Node(el, head);
         }
+
         Node temp = head;
         int cnt = 0;
-        while (temp != null) {
-            cnt++;
-            if (cnt == k - 1) {
-                Node newnode = new Node(el, temp.next);
-                temp.next = newnode;
-                return head;
 
+        while (temp != null) {
+
+            cnt++;
+
+            // We need to reach (k-1)th node
+            if (cnt == k - 1) {
+
+                Node newNode = new Node(el, temp.next);
+
+                temp.next = newNode;
+
+                return head;
             }
+
             temp = temp.next;
         }
+
         return head;
     }
 
-    // insert Before Given Value
+    // Insert Before Given Value
     private static Node insertBeforeVal(Node head, int el, int val) {
+
+        // Empty Linked List
         if (head == null) {
             return null;
         }
+
+        // If value is present at head
         if (head.data == val) {
             return new Node(el, head);
         }
-        Node temp = head;
-        while (temp.next != null) {
-            if (temp.next.data == val) {
-                Node newnode = new Node(el, temp.next);
-                temp.next = newnode;
-                return head;
 
+        Node temp = head;
+
+        while (temp.next != null) {
+
+            // Check next node's value
+            if (temp.next.data == val) {
+
+                Node newNode = new Node(el, temp.next);
+
+                temp.next = newNode;
+
+                return head;
             }
+
             temp = temp.next;
         }
+
         return head;
     }
 
     public static void main(String[] args) {
-        int[] arr = { 12, 5, 8, 7 };
-        // int val = 25;
-        // int k = 2;
+
+        int[] arr = {12, 5, 8, 7};
+
+        int val = 25;
+        int k = 2;
         int el = 22;
+
+        // Convert array to Linked List
         Node head = convertArr2LL(arr);
-        // head = insertHead(head, val);
-        // head = insertTail(head, val);
-        // head = insertPos(head, el, k);
-        int val = 7;
+
+        // Insert 25 at Head
+        head = insertHead(head, val);
+
+        // Insert 25 at Tail
+        head = insertTail(head, val);
+
+        // Insert 22 at position 2
+        head = insertPos(head, el, k);
+
+        // Insert 85 before value 7
         el = 85;
-        head = insertBeforeVal(head, el, val);
+        head = insertBeforeVal(head, el, 7);
+
+        // Print final Linked List
         printLL(head);
     }
-
 }
