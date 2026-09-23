@@ -5,11 +5,14 @@ public class InsertionInLL {
     // Convert Array to Linked List
     private static Node convertArr2LL(int[] arr) {
 
+        if (arr.length == 0) {
+            return null;
+        }
+
         Node head = new Node(arr[0]);
         Node mover = head;
 
         for (int i = 1; i < arr.length; i++) {
-
             Node temp = new Node(arr[i]);
 
             mover.next = temp;
@@ -23,7 +26,6 @@ public class InsertionInLL {
     private static void printLL(Node head) {
 
         while (head != null) {
-
             System.out.print(head.data + " ");
             head = head.next;
         }
@@ -34,15 +36,13 @@ public class InsertionInLL {
     // Insert at Head
     private static Node insertHead(Node head, int val) {
 
-        Node temp = new Node(val, head);
-
-        return temp;
+        return new Node(val, head);
     }
 
     // Insert at Tail
     private static Node insertTail(Node head, int val) {
 
-        // If Linked List is empty
+        // Empty Linked List
         if (head == null) {
             return new Node(val);
         }
@@ -63,7 +63,6 @@ public class InsertionInLL {
 
         // Empty Linked List
         if (head == null) {
-
             if (k == 1) {
                 return new Node(el);
             }
@@ -83,7 +82,7 @@ public class InsertionInLL {
 
             cnt++;
 
-            // We need to reach (k-1)th node
+            // Reach (k-1)th node
             if (cnt == k - 1) {
 
                 Node newNode = new Node(el, temp.next);
@@ -107,7 +106,7 @@ public class InsertionInLL {
             return null;
         }
 
-        // If value is present at head
+        // Value is present at head
         if (head.data == val) {
             return new Node(el, head);
         }
@@ -116,7 +115,6 @@ public class InsertionInLL {
 
         while (temp.next != null) {
 
-            // Check next node's value
             if (temp.next.data == val) {
 
                 Node newNode = new Node(el, temp.next);
