@@ -12,4 +12,11 @@ public class BestTimeToBuyAndSellStockII {
         }
         return maxProfit;
     }
+
+    public static void main(String[] args) {
+        BestTimeToBuyAndSellStockII solver = new BestTimeToBuyAndSellStockII();
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        System.out.println("Max Profit II: " + solver.maxProfit(prices));
+    }
 }
+

@@ -1,5 +1,7 @@
 package array;
 
+import java.util.Arrays;
+
 public class RotateArray {
     public void rotate(int[] nums, int k) {
         if (nums == null || nums.length == 0) return;
@@ -17,5 +19,13 @@ public class RotateArray {
             start++;
             end--;
         }
+    }
+
+    public static void main(String[] args) {
+        RotateArray solver = new RotateArray();
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        int k = 3;
+        solver.rotate(nums, k);
+        System.out.println("Rotated Array: " + Arrays.toString(nums));
     }
 }

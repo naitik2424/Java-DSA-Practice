@@ -12,4 +12,17 @@ public class RemoveDuplicatesII {
         }
         return index;
     }
+
+    public static void main(String[] args) {
+        RemoveDuplicatesII solver = new RemoveDuplicatesII();
+        int[] nums = {1, 1, 1, 2, 2, 3};
+        int k = solver.removeDuplicates(nums);
+        System.out.println("New length: " + k);
+        System.out.print("Array elements: ");
+        for (int i = 0; i < k; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
+    }
 }
+
