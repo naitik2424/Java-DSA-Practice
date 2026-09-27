@@ -42,6 +42,29 @@ public class InsertionInDLL {
         return head;
     }
 
+    public static Node insertAtK(Node head, int k, int val) {
+        if (k == 1) {
+            return insertAtHead(head, val);
+        }
+        int cnt = 0;
+        Node temp = head;
+        while (temp != null) {
+            cnt++;
+            if (cnt == k) {
+                break;
+            }
+            temp = temp.next;
+        }
+        if (temp != null) {
+            Node prev = temp.back;
+            Node newNode = new Node(val, temp, prev);
+            prev.next = newNode;
+            temp.back = newNode;
+
+        }
+        return head;
+    }
+
     public static void DLLprint(Node head) {
         while (head != null) {
             System.out.print(head.data + " ");
@@ -59,6 +82,10 @@ public class InsertionInDLL {
         DLLprint(head);
         val = 20;
         head = insertAtTail(head, val);
+        DLLprint(head);
+        val = 16;
+        int k = 3;
+        head = insertAtK(head, k, val);
         DLLprint(head);
     }
 
