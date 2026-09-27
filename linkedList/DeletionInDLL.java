@@ -1,22 +1,5 @@
 package linkedList;
 
-class Node {
-    int data;
-    Node next;
-    Node back;
-
-    Node(int data1, Node next1, Node back1) {
-        this.data = data1;
-        this.next = next1;
-        this.back = back1;
-    }
-
-    Node(int data1) {
-        this.data = data1;
-        this.next = null;
-        this.back = null;
-    }
-}
 public class DeletionInDLL {
     // Convert Array to Doubly Linked List
     public static Node convertArr2DLL(int[] arr) {
@@ -109,43 +92,42 @@ public class DeletionInDLL {
         return head;
     }
 
-    static Node  deleteElement(Node head,int ele){
-        if(head== null) return null;
-        if(head.data == ele){
+    static Node deleteElement(Node head, int ele) {
+        if (head == null)
+            return null;
+        if (head.data == ele) {
             head = head.next;
             head.back = null;
         }
         Node temp = head;
-        Node prev =head;
-        while(temp != null){
-            if(temp.data == ele){
-                temp=temp.next;
+        Node prev = head;
+        while (temp != null) {
+            if (temp.data == ele) {
+                temp = temp.next;
                 temp.back = prev;
                 prev.next = prev.next.next;
-                
+
             }
             prev = temp;
-            temp=temp.next;   
+            temp = temp.next;
         }
         return head;
     }
 
     // Print DLL
     public static void DLLprint(Node head) {
-
         while (head != null) {
             System.out.print(head.data + " ");
             head = head.next;
         }
-
         System.out.println();
     }
 
     public static void main(String[] args) {
 
-        int[] arr = {2, 5, 6, 19,24,56};
+        int[] arr = { 2, 5, 6, 19, 24, 56 };
         System.out.println("Given Array : ");
-        for(int i=0;i<arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
@@ -165,7 +147,7 @@ public class DeletionInDLL {
         DLLprint(head);
 
         int ele = 19;
-        head = deleteElement(head,ele);
+        head = deleteElement(head, ele);
         DLLprint(head);
     }
 }

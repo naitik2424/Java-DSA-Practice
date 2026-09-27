@@ -1,16 +1,25 @@
 package linkedList;
 
-class Node {
-    int data;
-    Node next;
+public class Node {
+    public int data;
+    public Node next;
+    public Node back;
 
-    Node(int data) {
+    public Node(int data) {
         this.data = data;
         this.next = null;
+        this.back = null;
     }
 
-    Node(int data, Node next) {
+    public Node(int data, Node next) {
         this.data = data;
         this.next = next;
+        this.back = null;
+    }
+
+    public Node(int data, Node next, Node back) {
+        this.data = data;
+        this.next = next;
+        this.back = back;
     }
 }

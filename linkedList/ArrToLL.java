@@ -1,17 +1,5 @@
 package linkedList;
 
-class Node{
-    int data;
-    Node next;
-    Node(int data1,Node next1){
-        this.data = data1;
-        this.next = next1;
-    }
-    Node(int data1){
-        this.data = data1;
-        this.next = null;
-    }
-}
 public class ArrToLL {
     private static Node convertArr2LL(int[] arr){
         Node head = new Node(arr[0]);
