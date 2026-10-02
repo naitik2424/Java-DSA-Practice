@@ -1,5 +1,6 @@
 package string;
 
+// LC:- 2267 Check if There Is a Valid Parentheses String Path
 class ValidParentheses {
     public boolean hasValidPath(char[][] grid) {
 
