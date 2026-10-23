@@ -4,8 +4,8 @@
 
 package string;
 import java.util.*;
-public class EvaluateBracketPair {
-    public String evaluate(String s, List<List<String>> knowledge) {
+class EvaluateBracketPair {
+    public static String evaluate(String s, List<List<String>> knowledge) {
         int n = s.length();
         Map<String, String> mp = new HashMap<>();
 
@@ -32,19 +32,12 @@ public class EvaluateBracketPair {
 
         return result.toString();
     }
-
     public static void main(String[] args) {
-        EvaluateBracketPair solver = new EvaluateBracketPair();
-        String s = "(name)is(age)yearsold";
-        List<List<String>> knowledge = new ArrayList<>();
-        knowledge.add(Arrays.asList("name", "bob"));
-        knowledge.add(Arrays.asList("age", "two"));
-
-        String ans = solver.evaluate(s, knowledge);
-        System.out.println("Result: " + ans);
+        String s ="(name)is(age)yearsold";
+        String[][] knowledge={{"name","bob"},{"age","two"}};
+        System.out.println(evaluate(s,knowledge));
     }
 }
-
 
 
 //Approach-2
